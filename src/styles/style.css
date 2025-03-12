@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+header{
+    width: 100%;
+}
+
+.header__navigation{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.left-icons, .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navigation .search{
+
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+    max-width: 600px;
+    min-width: 150px;
+}
+
+.search .search-input{
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid;
+    border-radius: 500px;
+    margin-left: 8px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.search-input input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.search-input button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 0px 500px 500px 0px;  
+    cursor: pointer;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+
+.right-icons button{
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+
+#img{
+    padding: 1px 6px;
+}
+
+#img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+}
+
+.sidebar{
+    height: 100vh;
+    background-color: white;
+    padding: 24px;
+}
+
+.sidebar ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.main-content{
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));  
+    gap: 5px;
+}
+
+.main-content .video{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-content .video-info{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.video-info img{
+    width: 42px;
+    height: 42px;
+}
+
+.video-info h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.video-info span{
+    font-size: 14px;
+}
+
+
